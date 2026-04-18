@@ -8,16 +8,16 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background-color: #FAF3E6;
+      background: #F5F0E6;
       color: #1C1917;
       font-family: -apple-system, 'Segoe UI', Arial, sans-serif;
-      max-width: 680px;
+      max-width: 600px;
       margin: 0 auto;
-      padding: 48px 24px 64px;
+      padding: 48px 24px 80px;
       line-height: 1.7;
     }
 
-    .back {
+    a.back {
       display: inline-block;
       color: #35ABEA;
       text-decoration: none;
@@ -38,127 +38,117 @@
       margin-bottom: 40px;
     }
 
+    .card {
+      background: #FFFFFF;
+      border: 1.5px solid #EDE3C5;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
     h2 {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700;
-      margin-top: 36px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
       color: #1C1917;
     }
 
     p, li {
       font-size: 15px;
-      color: #444444;
-      margin-bottom: 10px;
+      color: #555555;
+      margin-bottom: 6px;
     }
 
     ul {
-      padding-right: 20px;
-      padding-left: 20px;
-      margin-bottom: 10px;
+      padding-left: 18px;
     }
 
+    a { color: #35ABEA; text-decoration: none; }
+
+    /* Hebrew section */
     .hebrew {
-      background: #EDE3C5;
-      border-radius: 16px;
-      padding: 24px;
-      margin-top: 48px;
       direction: rtl;
       text-align: right;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1.5px solid #EDE3C5;
     }
 
-    .hebrew h2 {
-      font-size: 20px;
-    }
-
-    .hebrew p, .hebrew li {
-      font-size: 15px;
-      color: #444;
+    .hebrew h1 {
+      font-size: 24px;
     }
 
     footer {
       margin-top: 48px;
-      padding-top: 24px;
-      border-top: 1px solid #EDE3C5;
       font-size: 13px;
       color: #78716C;
       text-align: center;
     }
-
-    footer a { color: #35ABEA; text-decoration: none; }
   </style>
 </head>
 <body>
 
-  <a class="back" href="index.html">← Back to אמונה</a>
+  <a class="back" href="index.html">← אמונה</a>
 
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated: April 2025 · Applies to the אמונה iOS app</p>
+  <p class="meta">Last updated: April 2025 · אמונה iOS app</p>
 
-  <h2>1. Who We Are</h2>
-  <p>אמונה ("Emunah") is an AI-powered Hebrew Bible companion app developed by Yehonathan Yadgar. Questions or concerns: <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a>.</p>
-
-  <h2>2. What We Collect</h2>
-  <p>We collect only what is necessary to operate the app:</p>
-  <ul>
-    <li><strong>Anonymous device identifier</strong> — a randomly generated ID used to associate your conversations and subscription status with your device. It contains no personal information.</li>
-    <li><strong>Conversation messages</strong> — the questions you ask and the AI responses you receive, stored so you can view your history.</li>
-    <li><strong>Subscription status</strong> — whether you have an active subscription, managed via RevenueCat.</li>
-    <li><strong>Onboarding answers</strong> — the answers you provide during setup (e.g. goals, interests) used to personalise your 7-day journey.</li>
-  </ul>
-  <p>We do <strong>not</strong> collect your name, email address, phone number, location, or any other personally identifiable information.</p>
-
-  <h2>3. How We Use Your Data</h2>
-  <ul>
-    <li>To generate AI responses to your questions via OpenAI</li>
-    <li>To store and display your conversation history</li>
-    <li>To create your personalised 7-day Torah journey</li>
-    <li>To verify your subscription status and grant access to the app</li>
-  </ul>
-
-  <h2>4. Third-Party Services</h2>
-  <ul>
-    <li><strong>OpenAI</strong> — your messages are sent to OpenAI's API to generate responses. OpenAI's privacy policy applies.</li>
-    <li><strong>RevenueCat</strong> — manages in-app subscriptions and purchase validation. RevenueCat's privacy policy applies.</li>
-    <li><strong>Supabase</strong> — our database provider, used to store conversations and profiles. Data is stored securely.</li>
-    <li><strong>Sefaria</strong> — used to fetch Bible verse text. No user data is sent to Sefaria.</li>
-  </ul>
-
-  <h2>5. Data Retention</h2>
-  <p>Your conversation data is retained as long as you use the app. You may request deletion of your data at any time by contacting us at <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a>.</p>
-
-  <h2>6. Children</h2>
-  <p>The app is not directed at children under 13. We do not knowingly collect data from children.</p>
-
-  <h2>7. Changes to This Policy</h2>
-  <p>We may update this policy. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-
-  <h2>8. Contact</h2>
-  <p>Questions about this privacy policy: <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a></p>
-
-  <!-- Hebrew version -->
-  <div class="hebrew">
-    <h2>מדיניות פרטיות — עברית</h2>
-
-    <h2>מה אנו אוספים</h2>
-    <p>אנו אוספים רק את המידע הנחוץ להפעלת האפליקציה:</p>
+  <div class="card">
+    <h2>What we collect</h2>
     <ul>
-      <li><strong>מזהה מכשיר אנונימי</strong> — מזהה אקראי שאינו מכיל מידע אישי, המשמש לשיוך השיחות ומצב המנוי שלך.</li>
-      <li><strong>הודעות שיחה</strong> — השאלות שאתה שואל והתשובות שאתה מקבל, נשמרות כדי שתוכל לצפות בהיסטוריה.</li>
-      <li><strong>מצב מנוי</strong> — האם יש לך מנוי פעיל, מנוהל דרך RevenueCat.</li>
-      <li><strong>תשובות מהאונבורדינג</strong> — תשובות שסיפקת בהגדרה הראשונית, לצורך התאמה אישית של המסע שלך.</li>
+      <li><strong>Anonymous device ID</strong> — randomly generated, no personal info</li>
+      <li><strong>Conversation messages</strong> — your questions and AI responses</li>
+      <li><strong>Onboarding answers</strong> — used to personalise your 7-day journey</li>
+      <li><strong>Subscription status</strong> — managed via RevenueCat</li>
     </ul>
-    <p>אנו <strong>לא</strong> אוספים שם, כתובת אימייל, מספר טלפון, מיקום, או כל מידע מזהה אחר.</p>
-
-    <h2>מחיקת מידע</h2>
-    <p>ניתן לבקש מחיקת המידע שלך בכל עת על ידי פנייה אלינו: <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a></p>
-
-    <h2>צור קשר</h2>
-    <p>לשאלות בנוגע למדיניות הפרטיות: <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a></p>
+    <p style="margin-top:10px;">We do <strong>not</strong> collect your name, email, phone number, or location.</p>
   </div>
 
-  <footer>
-    <p><a href="index.html">אמונה</a> · © 2025 Yehonathan Yadgar · <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a></p>
+  <div class="card">
+    <h2>Third-party services</h2>
+    <ul>
+      <li><strong>OpenAI</strong> — generates AI responses from your messages</li>
+      <li><strong>RevenueCat</strong> — manages subscription and purchase validation</li>
+      <li><strong>Supabase</strong> — stores conversations and profiles securely</li>
+      <li><strong>Sefaria</strong> — fetches Bible verse text (no user data sent)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Data deletion</h2>
+    <p>You may request deletion of your data at any time: <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a></p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a></p>
+    <p>Developer: Yehonathan Yadgar</p>
+  </div>
+
+  <!-- Hebrew -->
+  <div class="hebrew">
+    <h1>מדיניות פרטיות</h1>
+    <p class="meta" style="margin-top:8px; margin-bottom:32px;">עודכן: אפריל 2025</p>
+
+    <div class="card">
+      <h2>מה אנו אוספים</h2>
+      <ul style="padding-right:18px; padding-left:0;">
+        <li><strong>מזהה מכשיר אנונימי</strong> — נוצר אקראית, ללא מידע אישי</li>
+        <li><strong>הודעות שיחה</strong> — השאלות שלך ותשובות ה-AI</li>
+        <li><strong>תשובות אונבורדינג</strong> — לצורך התאמת המסע האישי שלך</li>
+        <li><strong>מצב מנוי</strong> — מנוהל דרך RevenueCat</li>
+      </ul>
+      <p style="margin-top:10px;">אנו <strong>לא</strong> אוספים שם, אימייל, טלפון או מיקום.</p>
+    </div>
+
+    <div class="card">
+      <h2>מחיקת מידע</h2>
+      <p>ניתן לבקש מחיקת המידע בכל עת: <a href="mailto:jonyyadgar@gmail.com">jonyyadgar@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer style="margin-top:48px;">
+    <a href="index.html">← חזרה לאמונה</a> · © 2025 Yehonathan Yadgar
   </footer>
 
 </body>
